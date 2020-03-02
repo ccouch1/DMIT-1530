@@ -18,27 +18,28 @@
             <div class="container ">
                 <form method="POST" class="flex-contianer">
                     <div>
-                        <label for="text-field">Generic Text Field</label>
-                        <input type="text" id="text-field" name="text-field"/>
+                        <label for="text-field">Generic Text Field <span class="required">*</span></label>
+                        <input type="text" id="text-field" name="text-field" placeholder="Your Name Here" minlength="2" autofocus required/>
                     </div>
                     <div>
-                        <label for="phone">Phone #</label>
-                        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" maxlength="12" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/> 
+                        <label for="phone">Phone # <span class="required">*</span></label>
+                        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" maxlength="12" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required /> 
                     </div>
                     <div>
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="me@here.com"/>
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="me@here.com" required/>
                     </div>
                     <div>
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password"/>
+                        <label for="password">Password <span class="required">*</span></label>
+                        <input type="password" id="password" name="password" 
+                        pattern="^(?=.*[a-z)(?=.*[A-Z])(?=.*[0-9])(/=.*[!@#$%^&*_+-]){8,}]) required/>
                     </div>
                     <div>
                         <label for="url">WebSite</label>
                         <input type="url" id="url" name="url" placeholder="https://www.nait.ca" pattern="https://.*"/>
                     </div>
                   <fieldset>
-                        <legend>Radio Buttons</legend>
+                        <legend>Radio Buttons<span class="required">*</span></legend>
                         <div>
                                <input type="radio" id="male" name="gender" value="male" checked/>
                                <label for="male">Male</label>
@@ -53,7 +54,7 @@
                         </div>
                     </fieldset>
                     <fieldset>
-                        <legend>Checkboxes</legend>
+                        <legend>Checkboxes<span class="required">*</span></legend>
                         <div>
                             <input type="checkbox" id="cats" name="pets" value="cats" checked/>
                             <label for="cats">Cats</label>
@@ -70,12 +71,16 @@
                             <input type="checkbox" id="fish" name="pets" value="fish"/>
                             <label for="fish">Fish</label>
                         </div>
+                        <div>
+                            <input type="checkbox" id="other" name="pets" value="other"/>
+                            <label for="other">Other</label>
+                        </div>
                     </fieldset>
                         <!-- Select Menu (dropdown menu for forms)
                             each dropdown option is an <option>
                         -->
                         <div>
-                            <label for="select-field">Select Field</label>
+                            <label for="select-field">Select Field<span class="required">*</span></label>
                             <select id="select-field" name="select-field">
                                 <option value="0" selected>Select an Option</option>
                                 <option value="1">One</option>
@@ -86,6 +91,14 @@
                         <div>
                             <label for="message">Message</label>
                             <textarea id="message" name="message" rows="5" cols="20"></textarea>
+                        </div>
+                         <div>
+                            <label for="date-field">Date<span class="required">*</span></label>
+                            <input type="date" id="date-field" name="date-field" required/>
+                        </div>
+                        <div>
+                            <label for="range-slider">Rang Slider</label>
+                            <input id="range-slider" type="range" min="1" max="10" steps="10" value="5"/>
                         </div>
                         <div class="buttons">
                             <input type="submit" id="submit" name="submit" value="Submit"/>

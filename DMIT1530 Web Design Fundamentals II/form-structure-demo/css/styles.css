@@ -99,13 +99,44 @@ input[type=reset]{
     border: none;
     transition: background 0.25s ease-in-out;
 }
-
+input:required{
+    background: #fff url(../img/green-asterisk.png) no-repeat 98% center; 
+}
+input:required:focus:invalid{
+    background: #fff url(../img/red-x.png) no-repeat 98% center; 
+}
+input:required:focus:valid{
+    background: #fff url(../img/checkmark.png) no-repeat 98% center; 
+}
+input:required:invalid{
+    /*style according to needs of client */
+    color: red;
+}
+input:required:valid{
+    color: green;
+}
+input:focus{
+   background-color: lightskyblue; 
+}
+input[type=submit]:hover,
+input[type=submit]:focus,
+input[type=reset]:hover,
+input[type=reset]:focus{
+    background-color: darkred;
+    color: #fff;
+}
+::placeholder{
+    color: lightgrey;
+}
 .buttons{
     display:flex;
     justify-content: space-evenly;
 }
 
-
+.required{
+    color: red;
+    font-weight:bold;
+}
 
 
 /* ==========================================================================
