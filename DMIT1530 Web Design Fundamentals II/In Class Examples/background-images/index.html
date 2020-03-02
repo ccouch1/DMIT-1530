@@ -1,0 +1,68 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Full Background Image Demo</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="inner-header">
+      <h1>My Cool Background Image</h1>
+      <p>I could play the background I could play the background Cause I know sometimes I get in the way So won't You take the lead, lead, lead? So won't You take the lead, lead, lead? And I could play the background, background And you could take the lead</p>
+    </div>
+  </header>
+  <section>
+    <h2>Background Images</h2>
+    <h3>To use a background image on an element:</h3>
+    <ul>
+      <li>background-image: url(path.jpg);</li>
+    </ul>
+    <h3>To repeat a background image:</h3>
+    <ul>
+      <li>background-image: repeat; (to tile it)</li>
+      <li>background-image: repeat-x; (tile horizontally)</li>
+      <li>background-image: repeat-y; (tile vertically)</li>
+      <li>background-image: no-repeat; (no tiling)</li>
+    </ul>
+    <h3>To attach a background:</h3>
+    <ul>
+      <li>background-attachment: fixed;</li>
+      <li>background-attachment: scroll; (default value)</li>
+    </ul>
+    <h3>To position a background image:</h3>
+    <ul>
+      <li>background-position: x y;</li>
+      <li>Where x and y can be percentages or absolute values</li>
+      <li>x can be "left" "center" "right"</li>
+      <li>y can be "top" "center" "bottom"</li>
+    </ul>
+    <h3>Using background shorthand:</h3>
+    <ul>
+      <li>Can place all background properties on one line using the property background. For example:</li>
+      <li>background: url(path.jpg) repeat fixed center top;</li>
+    </ul>
+    <h3>*Tip: It's good practice to use a background-color as a fallback.</h3>
+    <ul>
+      <li>background-color: ##add8e6; /*fallback*/</li>
+      <li>background: url(path.jpg) no-repeat center;</li>
+    </ul>
+    <h3>Background Size:</h3>
+    <ul>
+      <li>background-size: width height;</li>
+      <li>Width and height are px values or percentages. If you only give it a width, the height is set to auto.</li>
+      <li>background-size: cover;</li>
+      <li>Scales the background to cover the entire area, might cut off some of the background to make it fit.</li>
+      <li>background-size: contain;</li>
+      <li>Scales the image to it's largest size so that both width and height can fit the container. Doesn't cut off any of the image.</li>
+      <li>To use within shorthand, the value/s must come after the position values and it's separated by /</li>
+    </ul>
+  </section>
+</body>
+
+</html>

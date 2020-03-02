@@ -1,0 +1,38 @@
+html { font-size: 16px; font-size: 62.5%;
+		box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit; }
+
+body {width: 75%;
+		margin: 0 auto;
+		font-size: 3.0rem;
+		}
+
+main {padding: 4.0rem}
+
+
+/* --- Typographical Scales --- */
+.font-style { font-style: italic; }
+.font-weight { font-weight: bold;}
+.font-size {  font-size: 2em;}
+.line-height {line-height: 2em;}
+.font-family { font-family: helvetica;}
+.short-hand { font: oblique 900 3.5rem/1.5 verdana;}
+sup, sub {font-size:  0.65em; line-height: 0.75em; }
+/**h1:first-letter {font: normal bold 2em Arial;  }**/
+.font-variant { font-variant: small-caps; }
+.text-transform { text-transform: capitalize;}
+.font-stretch { font-stretch:ultra-expanded; }
+.text-align { text-align: right;  }
+.text-indent { text-indent: 3.0rem;  }
+.letter-spacing { letter-spacing: 0.5rem; }
+.word-spacing { word-spacing: 0.5rem; }
+
+
+/* --- Navigational Behaviours --- */
+nav a {text-decoration: none;}
+
+a:link {color: #333;}
+a:active {color: #333;}
+a:hover {color: #999;}
+a:visited {color: #999;}

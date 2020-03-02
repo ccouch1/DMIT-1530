@@ -1,0 +1,123 @@
+/* ==========================================================================
+   Base styles:   DO NOT CHANGE
+========================================================================== */
+html { color: #222; font-size: 1em; line-height: 1.4; box-sizing: border-box; font-family:  'Montserrat', sans-serif;  font-weight: 400; }
+*, *:before, *:after { box-sizing: inherit; }
+h1, h2, h3, p { margin: 0; }
+::-moz-selection { background: #b3d4fc; text-shadow: none; }
+::selection { background: #b3d4fc; text-shadow: none; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ audio, canvas, iframe, img, svg, video { vertical-align: middle; }
+fieldset { border: 0; margin: 0; padding: 0; }
+textarea { resize: vertical; }
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+a { text-decoration: none; }
+nav { width: 1220px; margin: 0 auto; }
+header { display: flex; flex-direction: column; }
+h1
+{
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin: 0;
+  color:#222;
+  flex: 1;
+}
+nav
+{
+  display: flex;
+  line-height: 3.125rem;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul 
+{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  justify-content: space-between;  
+}
+nav ul ul { display: none; }
+nav a { color: #333;}
+h2 span, h1 span { font-weight: 300; }
+
+header div
+{
+  background-image: url(../img/banner.jpg);
+  height: 25rem;
+  background-position: top center;
+  background-size: cover;
+  text-align: center;
+  color: white;   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header h2, header h3 { margin: 0; line-height: 1; }
+header h2 { margin-bottom: 2.25rem; font-size: 1.5rem;}
+header h3 { font-size: 1.125rem; font-weight: 400; }
+/* end of do not change */
+
+/* add your styles here  */
+
+.menu li{
+  padding: 0 1rem;
+  position: relative;
+  white-space: nowrap;
+  display: flex;
+}
+
+.menu > li:hover{
+  text-decoration: underline;
+  text-decoration-color: rgb(18,181,181);
+}
+.dropdown,
+.dropdown-right{
+  background-color: rgb(18,181,181);
+  position: absolute;
+  top: 100%;
+  transition: all 1s ease;
+}
+
+.dropdown{
+  left:1rem;
+}
+
+.dropdown-right{
+  right: 1rem;
+}
+
+.menu li:hover > ul{
+  display: unset;
+}
+
+.dropdown >li:hover a,
+.dropdown-right >li:hover a{
+  color: lawngreen;
+}
+
+.dropdown-right li a{
+  margin-left: auto;
+}
+
+.menu li:focus-within > ul,
+.menu li > ul:focus{
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+/* ==========================================================================
+   Helpers styles:   DO NOT CHANGE
+========================================================================== */
+.hidden { display: none !important; }
+.sr-only { border: 0; clip: rect(0, 0, 0, 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; white-space: nowrap; width: 1px; }
+.sr-only.focusable:active, .sr-only.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; white-space: inherit; width: auto;}
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after {  clear: both; }
+/* end of do not change */

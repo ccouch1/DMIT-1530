@@ -1,0 +1,76 @@
+body{
+	background-color: white;
+}
+
+.container{
+	margin: 0 auto; /*centers the web page */
+	width: 960px;
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+.copyright{
+	font-style: italic;
+}
+	/* Additional project specific styling start */
+section {
+	border: 3px solid #555555;
+}
+header{
+	border: 3px solid #555555;
+	padding-bottom: 24px;
+}
+
+section li{
+	margin-top: 20px;
+	line-height: 2;
+}
+header div:first-child {
+		padding-right: 
+}
+header div:last-child {
+		text-align:right;
+		padding-top: 58px;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+}
+
+footer{
+	text-align: center;
+	padding-top: 23px;
+	padding-bottom: 23px;
+}
+
+section li:last-child a{
+	text-decoration: none;
+	padding: 24px 18px;
+	background: #1f6f13; /** john deere green **/
+	color: white;
+	display: inline-block;
+	margin-bottom: 40px;
+
+}
+
+.hidden{
+	display
+}
+
+.column{
+		display: flex;
+		flex-wrap: wrap;
+		text-align:center;
+		justify-content: space-around;
+	}
+	/* Additional project specific styling end   */
+.contact {
+
+}
+.contact a{
+
+}
+.contact img{
+	display: inline-block;
+	vertical-align: baseline;
+}

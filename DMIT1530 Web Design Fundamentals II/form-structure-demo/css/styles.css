@@ -1,0 +1,184 @@
+html {
+    color: #222;
+    font-size: 0.625rem;
+    line-height: 1.5;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+header{margin-bottom: 3rem; }
+
+h1{
+    text-align: center;
+    font-size:6.4rem;;
+}
+
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 1px solid blue;
+    margin: 0.5rem 0;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+}
+
+
+body{
+    font-size:1.8rem;
+}
+
+.container{
+    margin:0 auto;
+    width: 120rem;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+form{
+    width: 60rem; /*600px*/
+    margin: auto;
+}
+
+form div{
+    margin-bottom: 3rem;
+}
+label{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+input,
+select{
+    display: block;
+    width: 60rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+
+fieldset div{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+input [type=radio],
+input [type=checkbox]{
+    width: initial;
+    margin-right: 1rem;
+}
+
+legend{
+    margin-bottom: 1rem;
+    margin-left: 0.75rem;
+    padding: 0 0.5rem;
+}
+
+textarea{
+    resize: none;
+    min-width: 60rem;
+    max-width: 60rem;
+    min-height: 30rem;
+    max-height: 30rem;
+}
+
+input[type=submit],
+input[type=reset]{
+    width: 25rem;
+    padding: 1rem;
+    display: inline-block;
+    background-color: #e74c3c;
+    color: #c0392b;
+    border-radius: 1rem;
+    margin: 0 2rem;
+    border: none;
+    transition: background 0.25s ease-in-out;
+}
+
+.buttons{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+

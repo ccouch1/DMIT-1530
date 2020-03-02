@@ -1,0 +1,96 @@
+body{
+	background-color: white;
+}
+
+.container{
+	margin: 0 auto; /*centers the web page */
+	width: 960px;
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+.copyright{
+	font-style: italic;
+	/* Additional project specific styling start */
+	padding: 10px;
+	/* Additional project specific styling end   */
+}
+
+/* Single element selectors */
+
+h1,
+h2{
+	text-align: center;
+	font-weight: bold;
+}
+
+h1{
+	font-size: 48px;
+	padding:24px;
+}
+
+h2{
+	font-size: 24px;
+}
+
+main{	 
+	padding: 15px 0;
+	padding-right: 15px;
+	background-color: #D3D3D3;
+	border:2px solid #333;
+}
+
+footer{
+	clear:both;
+	background-color: #dedede;
+	border:2px solid #333;
+	margin-top:15px;
+}
+
+/* class selectors */
+.red-paint,
+.blue-paint,
+.yellow-paint{
+	width: 294px;
+	height: 320px;
+	margin-left: 15px;
+	border:2px solid #333;
+}
+
+.red-flex,
+.blue-flex,
+.yellow-flex{
+	
+	width: 294px;
+	height: 320px;
+	margin-left: 15px;
+	border:2px solid #333;
+}
+.red-paint,
+.red-flex {
+	background:rgba(237,27,26,1);
+}
+
+.blue-paint,
+.blue-flex {
+	background:rgba(26,27,237,1);
+}
+
+.yellow-paint,
+.yellow-flex  {
+	background:rgba(241,224,75,1);	
+}
+
+.paint-contaier{
+	margin-bottom: 15px;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.flexed{
+	display:
+	flex-wrap: row-reverse no-wrap;
+}

@@ -1,0 +1,123 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.125rem; /* 18px */
+}
+
+.inner-container {
+    width: 64rem; /* 1024px */
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* https://webaim.org/techniques/css/invisiblecontent/ */
+/* display: none; or visibility: hidden; will both hide the element and the text will be ignored by screen readers. This visibility hidden class will hide the text visually but not from screen readers. This can be used for hiding h1 text when using a logo in place of the h1. */
+.visually-hidden {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+header{
+    background-image: linear-gradient(0deg, rgba(68,51,122,1) 0%, rgba(107,70,193,1) 100%);
+}
+
+/* --- header styles below --- */
+header.logo{
+        margin: 0.625rem;
+}
+
+/* ---  nav styles below   --- */
+/* Step 1: style nav li and a as normal. */
+/* Text styling goes on the anchor element to overwrite browser styles. Spacing and layout goes on the li elements. */
+.menu li a,
+.btn{
+    color: #faf5ff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+}
+
+.menu li{
+    padding: 0 1rem;
+    line-height: 4.375 /* 70px*/;
+    position: relative;
+    white-space: nowrap; /* forcest the text inside the li to stay on one line and not wrap*/
+}
+
+.btn{
+    margin-left: auto;
+    border: 1px solid #faf5ff;
+    padding: 0.5rem;
+    margin-top: 0.625rem;
+    border-radius: 4px;
+}
+
+.menu > li:hover{
+    background-color: #805ad5;
+}
+
+.btn:hover{
+    color:#805ad5;
+    background-color: #faf5ff;
+}
+/* Step 2: position and hide the dropdown menu */
+.dropdown{
+         background-image: linear-gradient(0deg, rgba(68,51,122,1) 0%, rgba(107,70,193,1) 100%);
+         position: absolute;
+         left: 0;
+         top: 100%;
+         visibility: hidden;
+         opacity: 0;
+}
+.dropdown li{
+    border-bottom: 1px solid rgba(237,242,247,0.4);
+    line-height: 2.8125rem; /* 45px */
+}
+/* Step 2a: Position the Second Teir Dropdown */
+.menu li{
+    display: flex;
+}
+/* Step 3: add hover state that shows the dropdown menu */
+.menu li:hover > ul{
+        visibility: visible;
+        opacity: 1;
+}
+
+
+.dropdown >li{
+    padding: 0 1rem 0 0.75rem;
+}
+
+
+.dropdown ul{
+    top: 0;
+    left: 100%;
+}
+.dropdown > li:hover{
+    border-left: 0.25rem solid #d6bcfa;
+}
+/* Step 4: add transition to remove the clunkiness effect. Delaying the hover effect makes this more usable when accidentally moving your cursor off the menu. */
+.dropdown{
+    transition: all 0.5s ease;
+}
+/* Step 5: add accessibility with the :focus-within state on the li's which will target the anchor tags inside*/
+/* Test the tab navigation by tabbing through the webpage content */
+/* http://webaim.org/techniques/keyboard/ */
+/*https://designmodo.com/ux-dropdown-navigation-menus/*/
+/*https://www.toptal.com/designers/htmlarrows/*/
+/*https://dev.w3.org/html5/html-author/charref*/
+.menu li:focus-within > ul,
+.menu li > ul:focus{
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}

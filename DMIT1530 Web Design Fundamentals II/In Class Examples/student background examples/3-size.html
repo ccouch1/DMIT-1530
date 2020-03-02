@@ -1,0 +1,106 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <style type="text/css">
+    /*
+    Before CSS3, the size of a background image was the actual size of the image. CSS3 allows us to re-use background images in different contexts.
+
+    The size of the image can be fully constrained or only partially in order to preserve its intrinsic ratio.
+
+    The size can be specified in lengths, percentages, or by using one of the two keywords: contain or cover.
+
+    The two other possible values for background-size are contain and cover.
+
+    The cover keyword scales the background image so that the content area is completely covered by the background image (both its width and height are equal to or exceed the content area). As such, some parts of the background image may not be visible in the background positioning area.
+
+    The contain keyword scales the background image to be as large as possible (but both its width and its height must fit inside the content area). As such, depending on the proportions of the background image and the background positioning area, there may be some areas of the background which are not covered by the background image.
+
+    if only 1 value set it's the width and the height is set to auto
+    */
+
+    
+    /* styles all boxes using */
+    .box
+    {
+      background-image: url(img/size.png);;
+      height: 400px;
+      width: 800px;
+      margin: 20px auto;
+      border:1px solid red;
+      background-repeat: no-repeat;
+    }
+    .box1
+    {
+      background-size: 150px;
+
+    }
+    .box2
+    {
+      background-size: auto 25%;
+    }
+    .box3
+    {
+      background-size: cover;
+    }
+    .box4
+    {
+      background-size: contain;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  
+
+  <!--  original  -->
+  <div class="box">
+    
+  </div>
+  <div class="box box1">
+    
+  </div>
+  <div class="box box2">
+    
+  </div>
+  <div class="box box3">
+    
+  </div>
+  <div class="box box4">
+    
+  </div>
+
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+mens
+  tops
+  bottoms
+  sleep
+  feet
+  head
+  
+womens
+  tops
+  bottoms
+  sleep
+  feet
+  head    
+
+the brands
+  brand a
+  brand bc
+  brand cde
+  brand defg
+  brand edc
+  brand fed
+  brand g
+  brand hi    
+
+look book
+  2019
+  2018
+  2017
+  2016
+  2015    
+
+local stores
+  alberta 1
+  alberta 2
+  british columbia 1
+  british columbia 2 

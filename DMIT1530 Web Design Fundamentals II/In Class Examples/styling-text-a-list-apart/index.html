@@ -1,0 +1,235 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Web Font Exercise - 01</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <div role="main" class="main-wrapper">
+        <article class="article-layout hentry">
+            <header class="entry-header">
+                <h1 class="entry-title">Standardization and the Open Web</h1>
+                <p class="entry-details">
+                    <span itemscope itemtype="http://schema.org/Person">by <a class="author" rel="author" href="/author/jburson"><span>Jory Burson</span></a>
+                    </span>
+                    <time class="pubdate updated" datetime="2015-04-21T10:00:00-04:00">April 21, 2015</time>
+                    <span class="entry-meta optional-break">
+
+						Published in <a href="/topic/html"><span>HTML</span></a>, <a href="/topic/community"><span>Community</span></a>,
+                    <a href="/topic/state-of-the-web"><span>State of the Web</span></a>
+                    </span>
+                </p>
+            </header>
+            <div class="main-content">
+                <p>
+                    We’re done arguing over the importance of web standards. Accessibility, stability, quality control, and ease-of-use all helped
+                    to settle the debate long ago. Advocacy websites created to promote web standards—such as Chris Heilmann's
+                    <a href="http://icant.co.uk/webstandardsforbusiness/pmwiki.php">Web Standards for Business</a> and <a
+                        href="http://www.webstandards.org/learn/faq/">The Web Standards Project</a>—haven't needed to change
+                    at all since the mid-2000s.
+                </p>
+                <p>
+                    What <em>has</em> changed, however, is the way standards are developed—an issue arguably as important
+                    as the standards themselves. The next community debate, then, isn't about web standards; it's about how
+                    web standards should be standardized.
+                </p>
+                <h2>What's in a standard?</h2>
+                <p>
+                    The idea that standardization is important is reflected in the language we use to describe our projects and communities.
+                    For example, the <a href="http://jsonapi.org/">JSON API</a> homepage states that
+                    it is a “Standard for building APIs in JSON.” The FAQ page <a href="http://jsonapi.org/faq/">describes JSON API as a specification</a>,
+                    and developers are talking about its use <a href="https://twitter.com/ag_dubs/status/552225694403813377">in terms of compliance</a>.
+                    A competing project, <a href="http://stateless.co/hal_specification.html">HAL</a>, references the visual
+                    language of standardization on its website—the flow of the page reminiscent of a formal Request For Comment,
+                    before directing you to the <a href="https://tools.ietf.org/html/draft-kelly-json-hal-06">actual Internet Engineering Task Force RFC</a>.
+                </p>
+                <p>
+                    These projects illustrate a conflation of ideas about standards, which, left unaddressed, can lead to confusion. Both the
+                    JSON API specification and the HAL specification are <i>de facto</i> standards—an
+                    idea for a best practice approach to a common-use problem that is spreading organically through the developer
+                    community.
+                </p>
+                <p>
+                    The specifications we tend to think of more commonly, such as those for HTML and JavaScript, are <i>voluntary consensus</i>                    standards, meaning that international standards-setting bodies and industry consortia have agreed to
+                    work on and adopt these specifications, and create incentives for their implementation. But even in a
+                    voluntary consensus environment, differences of opinion can split a technology—JSON (not to be confused
+                    with JSON API) actually has two competing voluntary consensus specifications: one with the standards
+                    group <a href="http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf">Ecma</a>, the
+                    other with IETF.
+                </p>
+                <p>
+                    While the term “standard” is used here in all cases, all specifications are not created equal. We sometimes even see RFCs
+                    for technical specifications that will never become standards because they are theoretical ideas for
+                    how something <em>might</em> work; ergo, all standards will have specifications,
+                    but not all specifications are standards.
+                </p>
+                <h2>Making standards</h2>
+                <p>
+                    “Official” standards are specifications that have gone through a process of voluntary consensus. There is potentially a clear
+                    path for projects to evolve from a de facto specification to one that is standardized through voluntary
+                    consensus:
+                </p>
+                <ol>
+                    <li>Developer identifies problem and proposes solution to peers;</li>
+                    <li>Peer community provides feedback and proposes potential alternate solutions in public channels like GitHub
+                        or Google Groups;</li>
+                    <li>Peer community reaches mass consensus and hands specification off to a standards body;</li>
+                    <li>Developers implement solution while the standards body formalizes and legalizes the standard.</li>
+                </ol>
+                <p>
+                    Most developers I know are smart, resourceful, and prefer the path of least resistance; thanks to the <a
+                        href="http://en.wikipedia.org/wiki/Linus%27s_Law">all bugs are shallow</a> mentality of the OSS community,
+                    they're inclined to work together to solve issues of mutual concern. This is a fairly straightforward,
+                    not-at-all-new idea, and <a href="https://extensiblewebmanifesto.org/">The Extensible Web Manifesto</a>                    is essentially a call to action to implement more developer feedback on this very process.
+                </p>
+                <p>
+                    It's exciting to think that the next official web standards might come from the developer community, but in practice this
+                    path to official standardization has been obfuscated. The <a href="http://responsiveimages.org/">Responsive Images Community Group</a>                    experienced this firsthand when it proposed a specification for the <code>picture</code> element—noting
+                    an issue with the way HTML handled responsive images, the RICG proposed a developer-built, de facto solution
+                    to the <a href="https://whatwg.org/">Web Hypertext Application Technology Working Group</a>, maintainers
+                    of the “living” HTML standard. In a <a href="http://alistapart.com/article/responsive-images-and-web-standards-at-the-turning-point">well-documented</a>                    series of events, WHATWG practically dismissed the developer solution in favor of a vaguely specified
+                    solution they created over the course of a few days. If it weren't for the passion and persistence of
+                    the community and of RICG leadership, the developer solution would've been defeated.
+                </p>
+                <p>
+                    The RICG specification was ultimately accepted by WHATWG and the W3C, but the experience of the standardization process certainly
+                    left a bad taste in developers'' mouths. It would be easy enough to focus our attention on improving
+                    this process for community groups like RICG, and the web would certainly be a better place for developers
+                    if we did so—but wouldn't it be nice if we could define standardization not as “a process that makes
+                    technology,” but as “a process that makes agreements about technology”?
+                </p>
+                <p>
+                    In reality, <a href="http://en.wikipedia.org/wiki/Open_standard">open standardization</a> is a fundamentally
+                    power-laden and political process, and it's making its way into how we think about Open Source project
+                    and community governance. Put in the terms of <a href="http://www.catb.org/esr/writings/homesteading/cathedral-bazaar/index.html">Eric Raymond's seminal essay</a>,
+                    we've built web technologies in the bazaar-style of the open source development ethos, but standardizing
+                    those technologies is a cathedral-building activity.
+                </p>
+                <p>
+                    As we seek to standardize technology, we need to recognize the tension inherent in building cathedrals that will later become
+                    central authorities for us to reject. Our challenge is to find the balance between capitalizing on the
+                    benefits of standardization processes without eroding our community ideals. Thankfully, there are long
+                    histories of standardization efforts in other industries and communities that can provide insight for
+                    standardizing the web.
+                </p>
+                <h2>Old models for modern standards</h2>
+                <p>
+                    Open source communities can learn a lot from the histories and governance models of different standards organizations—indeed,
+                    web standards consortia like Ecma International and the W3C already have similar organizational structures,
+                    but it's helpful to understand the prior art upon which we are laying our community standards-setting
+                    foundation. After all, the “keep what works” mentality only works in the long run if you understand why
+                    it works in the first place.
+                </p>
+                <figure class="quote">
+                    <blockquote>Good programmers know what to write. Great ones know what to rewrite (and reuse).</blockquote>
+                    <figcaption>Eric Raymond</figcaption>
+                </figure>
+                <p>
+                    The ideological origins of web standards bodies come from early efforts to standardize telegraphy and engineering in the
+                    19th century, through committees such as the <a href="http://www.asce.org/">American Society of Civil Engineers</a>,
+                    <a href="http://en.wikipedia.org/wiki/ASME">American Society of Mechanical Engineers</a>, and <a href="http://en.wikipedia.org/wiki/American_Institute_of_Electrical_Engineers">American Institute of Electrical Engineers</a>.
+                    Many hosted regular “congresses”—Victorian-era precursors to today's web development conferences—that
+                    helped to create standards and to further define the identity of the professional engineer.
+                </p>
+                <p>
+                    As engineering disciplines began to overlap, it became clear that cooperation between these industrial societies would be
+                    necessary, so in 1918 the American Engineering Standards Committee was formed to encourage cooperation
+                    and coordination of standards across groups. The resulting structure was an “organization of organizations”
+                    that facilitated consensus-building among multiple engineering organizations, each comprised of a diverse
+                    pool of engineers from a diverse set of companies.
+                </p>
+                <p>
+                    Today, the AESC is known as the American National Standards Institute, but its 100-year-old model of governance—rife with
+                    community crises and ideals—is reflected in web standards groups. Then, as now, organizational disputes
+                    often arose between “shop culture” practitioners and “school culture” academics. A certain amount of
+                    tension between groups is healthy for moving ideas forward, and these early groups evolved organizational
+                    means for creating and releasing tension as necessary. Today’s default response to disputes in open-source
+                    software is to fork the specification in question, producing a network of rival camps who are incentivized
+                    to emphasize differences instead of areas of agreement.
+                </p>
+                <h2>When ideals compete</h2>
+                <p>
+                    “Openness” is a core ideal in the Open Web community, as well as something of a polluted word. The rhetoric of openness is
+                    meant to communicate a favorable set of values, and those values often depend on the speaker and the
+                    audience. In his book <cite><a href="http://www.cambridge.org/us/academic/subjects/history/twentieth-century-american-history/open-standards-and-digital-age-history-ideology-and-networks">Open Standards and the Digital Age</a></cite>,
+                    Professor Andrew Russell notes that “for individuals, ‘open’ is shorthand for transparent, welcoming,
+                    participatory, and entrepreneurial; for society at large, open signifies a vast increase in the flow
+                    of goods and information through a global, market-oriented system of exchange.” In the absence of a single
+                    definition that suits all parties, we tend to take “open” to mean “inclusive of everything.”
+                </p>
+                <p>
+                    Standardization, on the other hand, is often a process that defines what something <em>is</em> in terms
+                    of what it <em>is not</em>. Russell notes that the broader societal goal of standardizing technology
+                    is to create a “cohesive and flexible network” that can sustain complex social and economic activity.
+                    Thus, the process of making standards means incorporating a wide range of practices and ideas with political,
+                    economic, and cultural dimensions—all of which may be of strategic importance to creators, implementors,
+                    end users, and the general public. Put this way, standards are technically-oriented instances of diplomacy.
+                </p>
+                <p>
+                    In establishing the ISO subcommittee for developing open working standards in 1977, Charles Bachmann noted that “the adjective
+                    ‘open’ means to imply that all participants come to the system as equal partners.” In reality, participants
+                    don't often come to the table as equal partners—the OSI's own progress was stymied by organizational
+                    power plays and the growth of a competing technology, TCP/IP. But equality as an ideal of open standards-making
+                    has remained. This ideal is rooted in a deeply held opposition to centralized power, which, according
+                    to Russell, is reflected in the histories of many standards-setting organizations. Upholding this vision
+                    of equality and achieving successful implementation meant, at times, hiding conflicts and issues from
+                    those outside the meeting room—not exactly the transparent behavior one might expect from an “open” system.
+                </p>
+                <p>
+                    If standards really are agreements between equal parties, then the agreement is the controlling authority. And if standards-setting
+                    is a rejection of centralized control, then the standardization process becomes one of <a
+                        href="http://en.wikipedia.org/wiki/Creative_destruction">creative destruction</a>. It's the ideological
+                    circle of open-standards-making life: a group makes a consensus standard on some technology; as the standard
+                    circulates, a new party arises to point out a flaw or an unconsidered use case for the existing standard.
+                    The original group then has to make room for the new party and rework the standard, or else face rejection
+                    of the group and the standard. In rejecting the original group, the offended party forms a competing
+                    group and standard, and the cycle begins anew.
+                </p>
+                <h2>It's complicated</h2>
+                <p>
+                    It's a tangled web we weave standardizing the Open Web—political, economic, and social relationships between people, technologies,
+                    companies, and industry groups are difficult to ascertain at a glance. On closer inspection, one can
+                    see that these organizations and communities are complex systems forming a complex network—so complex
+                    that I was compelled to create this <a href="http://www.joryburson.com/standardization-project/">interactive Open Standards network graph</a>                    to help keep it all straight as I researched.
+                </p>
+                <p>
+                    Before we rush off to create a complex, decentralized network of open source standards groups, it probably warrants mentioning
+                    that complex systems fail 100% of the time. A decentralized network may let us fail smaller in most cases,
+                    but the key to longevity of the system is failing smart—and if the research has taught me anything, it's
+                    that standardization fails on the human, not the technological, element. For better or worse, complexity
+                    is not viral—so to mitigate this, we need to make the complexity of the standardization system consumable
+                    without abstracting away meaningful parts of the process.
+                </p>
+                <p>
+                    In the absence of community coordination, methodless enthusiasm will ensue—and caught somewhere in the Bermuda triangle of
+                    competing standards bodies, implementers, and OSS maintainers is the developer community. If we want
+                    our community-driven projects to become official, internationally recognized standards, we need to understand
+                    the impact of our governance processes as well as we understand the technical specifications for our
+                    technologies.
+                </p>
+                <footer class="entry-footer nocontent">
+                    <h1>About the Author</h1>
+                    <div class="byline author vcard">
+                        <h2><a class="fn" href="/author/jburson">Jory Burson</a></h2>
+                        <div class="author-bio"><a href="https://twitter.com/jorydotcom">Jory Burson</a> is the COO of <a href="http://bocoup.com/community/">Bocoup</a>,
+                            an Open Web technology company. When she’s not ensuring the long-term viability of Bocoup’s mission
+                            or boring people about organizational psychology, you can find her hanging out with her dog in
+                            Somerville, MA. Jory has also recently taken up street art, but don’t tell anyone.</div>
+                    </div>
+                </footer>
+                <aside class="promo-box email-promo">
+                    <b>Get our latest articles in your inbox.</b> <a href="/email-signup" data-trackevent="Post-article: email promo">Sign up for email alerts</a>.
+                </aside>
+            </div>
+        </article>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Positioning Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="img/round-logo.png" alt="logo">
+        <h1>Working With Some Position Properties</h1>
+    </header>
+    <section>
+        <div class="columns clearfix">
+            <div class="col">
+                <p>The above round logo is part of the header. In order to extend outside the header we need to give it a position
+                    of absolute. However, we want it’s absolute position to be relative to the header itself. Therefore we
+                    need to give the header the position relative. If we didn’t give the header a position of relative, the
+                    round logo would be positioned offset from the body of the document.</p>
+                <p>Now that the round logo is bumped down, slightly out of the header, it is moved from the document flow and
+                    will overlap our main content. Therefore we need to make sure to give our main content enough top margin
+                    to accommodate the overlapping round logo. </p>
+            </div>
+            <div class="col">
+                <p>These two columns are floating beside each other. They are here to give you more practice with your floats.
+                    Each column is half the size of the 960px website. They both have some padding on their left and right
+                    sides so that the text is not flush with the column edges. They have 20px on the left side, and 20px
+                    on the right side.</p>
+                <p>Also give the columns a min-height so the background colors are the same height.</p>
+                <p>Below these columns are three boxes. They are each 150px by 150px. Move them relatively from their original
+                    position.
+                </p>
+                <p>At the bottom we have a footer with a 1px border. Make that one fixed so that it stays on the sceen as you
+                    scroll.
+                </p>
+            </div>
+        </div>
+        <!-- end columns -->
+        <div class="relative-boxes">
+            <div class="box-1"></div>
+            <div class="box-2"></div>
+            <div class="box-3"></div>
+        </div>
+    </section>
+    <footer>
+        <!-- Your project specific footer code start -->
+
+        <!-- Your project specific footer code end   -->
+        <p class="copyright">
+            This project is for educational purposes only. [Chris Couch@ DMIT1530-A02]
+        </p>
+    </footer>
+</body>
+
+</html>

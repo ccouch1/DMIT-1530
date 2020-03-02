@@ -1,0 +1,61 @@
+body {width: 1024px;
+		margin: 0 auto;
+		font-family: arial;
+		}
+
+header {background-color: #6699cc; 	}
+
+header, main {padding: 40px;}
+
+main {background-color: #f8f2f2;}
+
+h1 {text-align: center;
+		font-weight: 800;
+		font-size: 48px;
+		margin-bottom: 24px;}
+
+p {line-height: 1.5}
+
+/* Navigation */
+nav ol {float: left;}
+nav li {float: left;
+		margin: 0 30px;}
+
+/* Dropdown*/
+nav ol ol, nav li li {float: none;
+						background-color: #6699cc;}
+
+nav ol ol {padding-bottom: 20px;
+			display: none;
+			position: absolute;
+			z-index: 100;}
+
+nav li li {margin: 20px 30px;  }
+
+nav a {text-decoration: none;
+		padding: 10px;
+		width: 115px;}
+
+nav a:link {
+    color: #333;
+}
+
+/* visited link */
+nav a:visited {
+    color: #333;
+}
+
+/* mouse over link */
+nav a:hover {
+    color: #004080;
+    text-decoration: underline;
+}
+/* Dropdown hover*/
+nav li:hover ol {
+	display: block;
+}
+
+/* selected link */
+nav a:active {
+    color: #004080;
+}

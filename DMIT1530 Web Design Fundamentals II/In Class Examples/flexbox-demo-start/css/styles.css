@@ -1,0 +1,85 @@
+body{
+	background-color: white;
+}
+
+.container{
+	margin: 0 auto; /*centers the web page */
+	width: 960px;
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+.copyright{
+	font-style: italic;
+	/* Additional project specific styling start */
+
+	/* Additional project specific styling end   */
+}
+
+/* single element selectors */
+h1,
+h2{
+	font-weight:bold;
+	text-transform: uppercase;
+	font-family: Arial, sans-serif;
+}
+
+h1{
+	font-size: 36pt;
+}
+
+h2{
+	font-size: 24pt;
+}
+img{
+	padding: 5px;
+	border: 2px solid black;
+	margin: 10px 5px 5px 5px;
+	background-color: white;
+	display: block;
+}
+
+header,
+footer,
+section{
+    border: 2px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+header,
+footer{
+    text-align: center;
+}
+
+section{
+	background-color: #c0c0c0;
+}
+
+
+/* class selectors */
+.hide-me{
+	display: none;
+}
+.flex-container{
+	display: flex;
+	flex-flow:row wrap;
+	/*flex-wrap: wrap;*/
+	/*flex-direction: row;*/
+	justify-content: space-around;
+	align-items: center;
+}
+.flex-container-2{
+	display: flex;
+	/*flex-flow: row-reverse wrap;*/
+	flex-wrap:wrap;
+	justify-content: flex-end;
+}
+.flex-container-2 div{
+	flex-direction: column;
+}
+.flex-container-3{
+	align-items: ;
+	order: 
+}

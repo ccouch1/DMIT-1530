@@ -1,0 +1,114 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Form Sturcture Demo</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>HTML5 Forms</h1>
+            </div>
+        </header>
+        <main>
+            <div class="container ">
+                <form method="POST" class="flex-contianer">
+                    <div>
+                        <label for="text-field">Generic Text Field</label>
+                        <input type="text" id="text-field" name="text-field"/>
+                    </div>
+                    <div>
+                        <label for="phone">Phone #</label>
+                        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" maxlength="12" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/> 
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email"/>
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password"/>
+                    </div>
+                    <div>
+                        <label for="url">WebSite</label>
+                        <input type="url" id="url" name="url"/>
+                    </div>
+                  <fieldset>
+                        <legend>Radio Buttons</legend>
+                        <div>
+                               <input type="radio" id="male" name="gender" value="male" checked/>
+                               <label for="male">Male</label>
+                        </div>
+                        <div>
+                              <input type="radio" id="female" name="gender" value="female"/>
+                              <label for="female">Female</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="other" name="gender" value="other"/>
+                            <label for="other">Other</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Checkboxes</legend>
+                        <div>
+                            <input type="checkbox" id="cats" name="pets" value="cats" checked/>
+                            <label for="cats">Cats</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="dogs" name="pets" value="dogs" checked/>
+                            <label for="dogs">Dogs</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="birds" name="pets" value="birds"/>
+                            <label for="birds">Birds</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="fish" name="pets" value="fish"/>
+                            <label for="fish">Fish</label>
+                        </div>
+                    </fieldset>
+                        <!-- Select Menu (dropdown menu for forms)
+                            each dropdown option is an <option>
+                        -->
+                        <div>
+                            <label for="select-field">Select Field</label>
+                            <select id="select-field" name="select-field">
+                                <option value="0" selected>Select an Option</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" cols="20"></textarea>
+                        </div>
+                        <div class="buttons">
+                            <input type="submit" id="submit" name="submit" value="Submit"/>
+                            <input type="reset" id="reset" name="reset" value="Reset"/>
+                        </div>
+                </form>               
+            </div>
+        </main>
+       
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
