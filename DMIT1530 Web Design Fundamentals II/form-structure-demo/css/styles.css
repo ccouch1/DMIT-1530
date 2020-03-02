@@ -125,6 +125,12 @@ input[type=reset]:focus{
     background-color: darkred;
     color: #fff;
 }
+
+input[type=color]{
+    width: 10rem;
+    height: 4rem;
+    padding: initial;
+}
 ::placeholder{
     color: lightgrey;
 }

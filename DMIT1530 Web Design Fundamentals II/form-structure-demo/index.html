@@ -16,7 +16,7 @@
         </header>
         <main>
             <div class="container ">
-                <form method="POST" class="flex-contianer">
+                <form method="POST" class="flex-container">
                     <div>
                         <label for="text-field">Generic Text Field <span class="required">*</span></label>
                         <input type="text" id="text-field" name="text-field" placeholder="Your Name Here" minlength="2" autofocus required/>
@@ -32,7 +32,7 @@
                     <div>
                         <label for="password">Password <span class="required">*</span></label>
                         <input type="password" id="password" name="password" 
-                        pattern="^(?=.*[a-z)(?=.*[A-Z])(?=.*[0-9])(/=.*[!@#$%^&*_+-]){8,}]) required/>
+                        pattern="^(?=.*[a-z)(?=.*[A-Z])(?=.*[0-9])(/=.*[!@#$%^&*_+-]){8,}])" required/>
                     </div>
                     <div>
                         <label for="url">WebSite</label>
@@ -97,8 +97,12 @@
                             <input type="date" id="date-field" name="date-field" required/>
                         </div>
                         <div>
-                            <label for="range-slider">Rang Slider</label>
-                            <input id="range-slider" type="range" min="1" max="10" steps="10" value="5"/>
+                            <label for="range-slider">Range Slider</label>
+                            <input id="range-slider" type="range" min="1" max="10" steps="10" value="5" name="range-slider"/>
+                        </div>
+                        <div>
+                            <label for="color-selector">Color Selector</label>
+                            <input type="color" id="color-selector" name="color-selector"/>
                         </div>
                         <div class="buttons">
                             <input type="submit" id="submit" name="submit" value="Submit"/>
