@@ -58,7 +58,7 @@ select{
     width: 60rem;
     padding: 1rem;
     border-radius: 0.5rem;
-}
+  }
 
 
 fieldset div{
@@ -67,10 +67,10 @@ fieldset div{
     margin-bottom: 0.5rem;
 }
 
-input [type=radio],
-input [type=checkbox]{
-    width: initial;
-    margin-right: 1rem;
+input[type=radio],
+input[type=checkbox]{
+  width: initial;
+  margin-right: 1rem;
 }
 
 legend{
