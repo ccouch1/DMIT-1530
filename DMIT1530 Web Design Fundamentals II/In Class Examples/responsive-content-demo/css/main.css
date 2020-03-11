@@ -1,0 +1,406 @@
+    /*
+Base styles: opinionated defaults
+========================================================================== */
+
+html {
+    color: #222;
+    font-size: 62.5%; /** base 10px **/
+    line-height: 1.5;
+}
+
+
+/*
+* Remove text-shadow in selection highlight:
+* https://twitter.com/miketaylr/status/12228805301
+*
+* These selection rule sets have to be separate.
+* Customize the background color to match your design.
+*/
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+/*
+* A better looking default horizontal rule
+*/
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/*
+* Remove the gap between audio, canvas, iframes,
+* images, videos and the bottom of their containers:
+* https://github.com/h5bp/html5-boilerplate/issues/440
+*/
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+
+/*
+* Remove default fieldset styles.
+*/
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+* Allow only vertical resizing of textareas.
+*/
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+Author's custom styles
+========================================================================== */
+
+body {
+    border-top: 1.8rem solid #068488;
+    font-family: 'Merriweather', serif;
+    font-size: 1.6rem;
+    /** 16px **/
+    color: rgba(17, 17, 17, 1);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: on;
+    -moz-text-size-adjust: on;
+    -ms-text-size-adjust: on;
+}
+
+.container {
+    width: 120rem;
+    margin: 0 auto;
+}
+
+
+/** Typogrpahy **/
+
+/** FONTS **/
+
+@font-face {
+    font-family: 'oswaldbold';
+    src: url('../fonts/oswald-bold-webfont.woff2') format('woff2'),
+         url('../fonts/oswald-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'oswald_regularregular';
+    src: url('../fonts/oswald-regular-webfont.woff2') format('woff2'),
+         url('../fonts/oswald-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+h1,
+h2,
+h3 {
+    font-family: 'oswald_regularregular';
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+h1 {
+    font-family: 'oswaldbold';
+    text-transform: uppercase;
+    font-size: 7.2rem;
+    font-weight: 700;
+    color: rgba(17, 17, 17, 1);
+    margin-bottom: 1.5rem;
+}
+
+h1 span {
+    color: #068488;
+}
+
+h2 {
+    font-size: 3.2rem;
+    color: rgba(50, 50, 50, 1);
+    /* (font-size*tracking/1000 = letter-spacing:)*/
+    letter-spacing: 0.16rem;
+    margin-bottom: 3rem;
+}
+
+h2::first-letter {
+    color: #068488;
+}
+
+h3 {
+    font-size: 3rem;
+    font-variant: small-caps;
+    text-transform: none;
+}
+
+p,
+em {
+    font-family: 'Merriweather', serif;
+    margin-bottom: 3rem;
+}
+
+p:last-of-type {
+    margin-bottom: 0;
+}
+
+em {
+    font-style: italic;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    color: rgba(17, 17, 17, 1);
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #00C6CF;
+}
+
+
+/** layout **/
+
+
+/** header **/
+
+header {
+    background: #e1e1e1;
+    padding: 8rem 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-container .header-left,
+.header-container .header-right {
+    width: 50%;
+    margin-right: 3rem;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-container .header-right:last-child {
+    margin-right: 0;
+}
+
+header p {
+    align-self: flex-start;
+    text-transform: capitalize;
+    font-size: 2.1rem;
+}
+
+header img {
+    width: 75%;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+
+/** main section **/
+
+.two-column-section {
+    display: flex;
+    align-items: center;
+    margin: 10rem 0;
+}
+
+.two-column-section .col {
+    width: 50%;
+    margin-right: 3rem;
+}
+
+.two-column-section .col:last-child {
+    margin-right: 0;
+}
+
+.col-1-of-2 img,
+.col-2-of-2 img {
+    width: 80%;
+    display: inline-block;
+    margin-bottom: 3rem;
+}
+
+aside {
+    padding: 3rem 0;
+}
+
+
+/** FOOTER **/
+
+footer {
+    padding: 3rem 0;
+    background: #068488;
+    margin: auto;
+}
+
+footer li,
+footer li a {
+    color: #DAD4D4;
+}
+
+footer li a:hover {
+    color: #ffa6ab;
+}
+
+/** 
+    - everything above the media queries will/should work for all screen sizes.
+    - only change what you need to change and only add in media queries where absolutely necessary. 
+    - use relative units: ems, rems, %, not pixels within your queries.
+ 
+    - media query below states: the minimum size will be at 320px (no smaller) and the largest this query will go to in 980px. 
+    - Any screen larger than 980px will either use what is outside of the media query or in the next largest media query
+	  (in our case it will be both).
+**/
+@media (min-width:320px) and (max-width: 979px){
+    h1{
+        font-size:3.6rem;
+    }
+    .img{
+        max-width: 90%;
+    }
+    .container{
+        width: 90%;
+    }
+    header{
+        padding: 4rem 0;
+    }
+    .header-container{
+        flex-direction: column;
+    }
+    .header-container .header-left,
+    .header-contianer .header-right{
+        width:100%;
+        margin-right: 0;
+    }
+    .header-container .header-left{
+        margin-bottom: 3rem;
+    }
+    /* need to sytle each of the two-column-section div's to be text theb images*/
+    .two-column-section{
+        flex-direction: column;
+        margin-bottom: 4rem;
+    }
+
+    .two-column-section:nth-child(even){
+        flex-direction: column-reverse;
+    }
+
+    .two-column-section img{
+
+    }
+}
+
+@media screen and (min-width:980px){
+    .contianer{
+        max-width: 90%;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .conatiner{
+        max-width: 120rem;
+    }
+
+}
+
+
+/* ==========================================================================
+Helper classes
+========================================================================== */
+
+
+/*
+* Hide visually and from screen readers
+*/
+
+.hidden {
+    display: none !important;
+}
+
+
+/*
+* Hide only visually, but have it available for screen readers:
+* http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*/
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+/*
+* Extends the .visuallyhidden class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+    visibility: hidden;
+}
+
+
