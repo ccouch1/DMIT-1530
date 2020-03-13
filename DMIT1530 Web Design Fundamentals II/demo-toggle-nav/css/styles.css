@@ -1,0 +1,28 @@
+body {
+    background-color: #192f5e;
+    font-family: sans-serif;
+}
+
+/*Step1:|Defautl state. Starting with the mobile view first,
+        |style and layou the nav links*/
+
+header{
+    background-color: #fff;
+    padding: 2%;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+header a{
+    color: #8a0303;
+    text-decoration: none;
+}
+.toggle-icon span{
+    width: 30px;
+    height: 4px;
+    margin-bottom: 6px;
+    border-radius: 100px;
+    background-color: #8a0303;
+    display: block;
+}
