@@ -17,16 +17,13 @@
 
   <meta name="theme-color" content="#fafafa">
 </head>
-
 <body>
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-  
+  <![endif]--> 
 	<header>  
-    
-    
     <img src="img/logo.png">
+    <img src="img/cart.png">
  		<nav role="navigation">
  			<!-- 
 			<ul>
@@ -41,8 +38,7 @@
  				<li><a href="pages/page-three.html">Page Three</a></li>
  			</ul> 
       -->
-      
-        <a href="#">Women</a>
+      <a href="#">Women</a>
         <div class="dropdown">
             <a href="#">Men &#9660;</a>
             <div class="dropdown-content-container">      
@@ -171,7 +167,6 @@
         <div class="dropdown">
             <a href="#">Electronics &#9660;</a>
             <div class="dropdown-content-container">
-              <h2>My Mega Menu - This is just a heading</h2>
               <div class="mega-menu-content"> 
           <div class="columns">
             <h3>Clothing</h3>
@@ -194,6 +189,20 @@
               <a href="#">Three</a>
               <a href="#">Four</a>
             </div>
+            <div class="columns">
+                <h3>Clothing</h3>
+                  <a href="#">One</a>
+                  <a href="#">Two</a>
+                  <a href="#">Three</a>
+                  <a href="#">Four</a>
+                </div>
+            <div class="columns">
+              <h3>Clothing</h3>
+               <a href="#">One</a>
+               <a href="#">Two</a>
+               <a href="#">Three</a>
+               <a href="#">Four</a>
+            </div>
           </div> <!-- End of mega menu content -->
         </div> <!-- end of the dropdown content container -->
       </div> <!-- This is the end of dropdown -->
@@ -205,12 +214,47 @@
      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h2>
      </div>
 	</header>
-
  <main>
- 	
-
- </main>
-
+  <div class="container">
+      <form method="POST" class="flex-container">
+          <fieldset>
+              <legend></legend>
+              <div>
+                  <input type="checkbox" id="men" name="individual" value="men" checked/>
+                  <label for="men">Men</label>
+              </div>
+              <div>
+                  <input type="checkbox" id="women" name="individual" value="women" checked/>
+                  <label for="women">Women</label>
+              </div>
+              <div>
+                  <input type="checkbox" id="children" name="individual" value="children"/>
+                  <label for="children">Children</label>
+              </div>
+          </fieldset>
+      </form>
+      <div class="product-box">
+        <div class="men">
+          <p>Men</p>
+          <div class="rows">
+            <img src="img/shirt.png">
+            <img src="img/pants.png">
+            <img src="img/backpack.png">
+          </div>
+        </div>
+          <div class="women">
+            <p>Women</p>
+            <div class="rows">
+              <img src="img/jacket">
+              <img src="img/shoe.png">
+              <img src="img/tee.png">
+            </div>
+          </div>
+      </div>
+  </div>
+<div class="bottom-contianer">
+</div>
+</main>
  <footer>
   <p>Markis Day</p>
  </footer>
@@ -221,7 +265,5 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-
 </body>
-
 </html>

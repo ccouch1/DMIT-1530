@@ -15,7 +15,7 @@ header{
     justify-content: space-between;
 }
 header a{
-    color: #8a0303;
+    color: #311432;
     text-decoration: none;
 }
 .toggle-icon span{
@@ -23,6 +23,78 @@ header a{
     height: 4px;
     margin-bottom: 6px;
     border-radius: 100px;
-    background-color: #8a0303;
+    background-color: #8A2BE2;
     display: block;
+}
+
+.menu-links li{
+    /* The extra height from the line height makes this easier to click on with mobile screens*/
+    line-height: 40 px;
+    text-align: center;
+}
+
+.menu-links a{
+    /* This allows the clickable area to take up the full width and height of the li*/
+    display: block;
+}
+/* Step 2: Hide the menu links*/
+header nav{
+    max-height: 0;
+    overflow: hidden;
+    /*transition: max-height 0.1s ease-in-out;*/
+}
+/* Step 3: reate a special class that will show the menu. This class exists in the CSS file for now, we do not add it in the HTML mark-up the Js File will do that for us*/
+
+.show-nav{
+    max-height: 19rem;
+}
+
+/* Step 4: Style the <main> <section> */
+
+section{
+    padding: 3.125rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section p{
+    color: #710193;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #4a2b47;
+    font-size: 1.777rem;
+    margin: 0 auto;
+}
+
+section h2{
+    color: #710193;
+    font-size: 3.57rem;
+}
+
+/* Step 5: Add a media Query to show all the menu links and remove the hamburger/toggle menu.*/
+
+@media screen and (min-width: 600px){
+    /* We no longer need the hamburger Icon */
+    .toggle-icon{
+        display: none;
+    }
+    /* Turn on the Nav*/
+    header nav{
+        max-height: 76px;
+    }
+
+    .menu-links,
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu-links li{
+        padding: 0 5px;
+        margin: 0 3px;
+    }
+
+    .menu-links li:hover{
+        background-color: #A32cc4;
+        border-radius: 8px;
+    }
 }
