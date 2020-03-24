@@ -1,0 +1,11 @@
+5.542"= 33.252004189229 Rems
+7.236"= 43.416005469733 Rems
+
+Header Big Rectangle
+W= 1920 Px = 120 Rems
+H= 945 Px = 59.0625
+
+Hex color Code
+Header
+#22559c
+#2d1e67
